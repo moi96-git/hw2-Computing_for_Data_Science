@@ -36,7 +36,6 @@ def total_registered_cases(covid_data, country):
 # The function should return a dictionary with a key
 # per each country and as value the total number of cases
 # registered so far that the country had
-#
 
 def total_registered_cases_per_country(covid_data):
     covid_data_grouped = {}
