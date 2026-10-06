@@ -1,6 +1,6 @@
 import pandas as pd
 
-DATA_URLPATH = "https://raw.githubusercontent.com/moi96-git/21DM004-Computing-for-Data-Science/refs/heads/main/covid.csv"
+DATA_URLPATH = "https://raw.githubusercontent.com/moi96-git/21DM004-Computing-for-Data-Science/refs/heads/main/data/covid.csv"
 
 def load_rawdata(url):
     return pd.read_csv(url)
