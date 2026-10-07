@@ -1,9 +1,9 @@
-import pandas as pd
+import pandas as pd 
 
-DATA_URLPATH = "https://raw.githubusercontent.com/moi96-git/hw2-Computing_for_Data_Science/refs/heads/main/data/covid.csv"
+path = 'data/covid.csv'
 
-def load_rawdata(url):
-    return pd.read_csv(url)
+def load_rawdata(path):
+    return pd.read_csv(path)
 
 
 def filter_numactive(df_data, greaterthan):
@@ -17,7 +17,7 @@ def calc_deathratio(df_data):
 
 
 if __name__ == "__main__":
-    df_test = load_rawdata(DATA_URLPATH)
+    df_test = load_rawdata(path)
     active_values = [500, 1000, 5000]
     for x in active_values:
         df_filter = filter_numactive(df_test, x)
